@@ -1606,6 +1606,7 @@ safe_f! {
     }
 }
 
+/*
 extern "C" {
     pub fn __errno_location() -> *mut ::c_int;
     pub fn setgrent();
@@ -1717,6 +1718,7 @@ extern "C" {
         entry: vm_map_entry_t,
     ) -> vm_map_entry_t;
 }
+*/
 
 cfg_if! {
     if #[cfg(libc_thread_local)] {

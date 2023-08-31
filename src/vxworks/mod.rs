@@ -1077,6 +1077,7 @@ f! {
     }
 }
 
+/*
 extern "C" {
     pub fn isalnum(c: c_int) -> c_int;
     pub fn isalpha(c: c_int) -> c_int;
@@ -1825,6 +1826,7 @@ extern "C" {
     pub fn mq_getattr(mqd: ::mqd_t, attr: *mut ::mq_attr) -> ::c_int;
     pub fn mq_setattr(mqd: ::mqd_t, newattr: *const ::mq_attr, oldattr: *mut ::mq_attr) -> ::c_int;
 }
+*/
 
 //Dummy functions, these don't really exist in VxWorks.
 
@@ -1850,6 +1852,7 @@ safe_f! {
     }
 }
 
+/*
 pub fn pread(_fd: ::c_int, _buf: *mut ::c_void, _count: ::size_t, _offset: off64_t) -> ::ssize_t {
     -1
 }
@@ -1884,6 +1887,7 @@ pub fn posix_memalign(memptr: *mut *mut ::c_void, align: ::size_t, size: ::size_
         }
     }
 }
+*/
 
 cfg_if! {
     if #[cfg(libc_core_cvoid)] {

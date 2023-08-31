@@ -638,6 +638,7 @@ f! {
     }
 }
 
+/*
 extern "C" {
     pub fn getrlimit(resource: ::c_int, rlim: *mut ::rlimit) -> ::c_int;
     pub fn setrlimit(resource: ::c_int, rlim: *const ::rlimit) -> ::c_int;
@@ -748,6 +749,7 @@ extern "C" {
     pub fn popen(command: *const c_char, mode: *const c_char) -> *mut ::FILE;
     pub fn uname(buf: *mut ::utsname) -> ::c_int;
 }
+*/
 
 mod generic;
 

@@ -3248,6 +3248,7 @@ safe_f! {
 
 }
 
+/*
 extern "C" {
     pub fn getrlimit64(resource: ::c_int, rlim: *mut rlimit64) -> ::c_int;
     pub fn setrlimit64(resource: ::c_int, rlim: *const rlimit64) -> ::c_int;
@@ -3698,6 +3699,7 @@ extern "C" {
         needlelen: ::size_t,
     ) -> *mut ::c_void;
 }
+*/
 
 cfg_if! {
     if #[cfg(target_pointer_width = "32")] {

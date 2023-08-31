@@ -138,9 +138,9 @@ pub const SOCK_NONBLOCK: ::c_int = 2048;
 
 pub const SOCK_SEQPACKET: ::c_int = 5;
 
-extern "C" {
-    pub fn getrandom(buf: *mut ::c_void, buflen: ::size_t, flags: ::c_uint) -> ::ssize_t;
-}
+// extern "C" {
+//     pub fn getrandom(buf: *mut ::c_void, buflen: ::size_t, flags: ::c_uint) -> ::ssize_t;
+// }
 
 cfg_if! {
     if #[cfg(target_arch = "aarch64")] {

@@ -7,7 +7,9 @@ f! {
     }
 }
 
+/*
 extern "C" {
     #[thread_local]
     pub static mut errno: ::c_int;
 }
+*/

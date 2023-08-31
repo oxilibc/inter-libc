@@ -2652,6 +2652,7 @@ safe_f! {
     }
 }
 
+/*
 #[link(name = "thread")]
 extern "C" {
     pub fn thr_kill(id: thread_t, sig: ::c_int) -> ::c_int;
@@ -3346,6 +3347,7 @@ extern "C" {
     // Use AIX thread-safe version errno.
     pub fn _Errno() -> *mut ::c_int;
 }
+*/
 
 cfg_if! {
     if #[cfg(target_arch = "powerpc64")] {

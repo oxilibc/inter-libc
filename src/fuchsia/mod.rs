@@ -3361,6 +3361,7 @@ impl ::Clone for fpos_t {
     }
 }
 
+/*
 extern "C" {
     pub fn isalnum(c: c_int) -> c_int;
     pub fn isalpha(c: c_int) -> c_int;
@@ -4252,6 +4253,7 @@ extern "C" {
         data: *mut ::c_void,
     ) -> ::c_int;
 }
+*/
 
 cfg_if! {
     if #[cfg(target_arch = "aarch64")] {

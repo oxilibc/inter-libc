@@ -2703,6 +2703,7 @@ safe_f! {
     }
 }
 
+/*
 extern "C" {
     pub fn getrlimit(resource: ::c_int, rlim: *mut ::rlimit) -> ::c_int;
     pub fn setrlimit(resource: ::c_int, rlim: *const ::rlimit) -> ::c_int;
@@ -3273,6 +3274,8 @@ pub unsafe fn minor(device: ::dev_t) -> ::minor_t {
 pub unsafe fn makedev(maj: ::major_t, min: ::minor_t) -> ::dev_t {
     __makedev(NEWDEV, maj, min)
 }
+
+*/
 
 mod compat;
 pub use self::compat::*;

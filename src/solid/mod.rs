@@ -420,6 +420,7 @@ impl ::Clone for fpos_t {
     }
 }
 
+/*
 extern "C" {
     // ctype.h
     pub fn isalnum(c: c_int) -> c_int;
@@ -870,6 +871,7 @@ extern "C" {
     // sys/types.h
     pub fn lseek(arg1: c_int, arg2: __off_t, arg3: c_int) -> __off_t;
 }
+*/
 
 cfg_if! {
     if #[cfg(libc_core_cvoid)] {

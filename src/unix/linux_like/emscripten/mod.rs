@@ -1762,6 +1762,7 @@ safe_f! {
     }
 }
 
+/*
 extern "C" {
     pub fn getrlimit64(resource: ::c_int, rlim: *mut rlimit64) -> ::c_int;
     pub fn setrlimit64(resource: ::c_int, rlim: *const rlimit64) -> ::c_int;
@@ -1891,6 +1892,7 @@ extern "C" {
 
     pub fn getentropy(buf: *mut ::c_void, buflen: ::size_t) -> ::c_int;
 }
+*/
 
 cfg_if! {
     if #[cfg(libc_align)] {

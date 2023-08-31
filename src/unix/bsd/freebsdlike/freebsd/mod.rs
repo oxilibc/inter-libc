@@ -4861,6 +4861,7 @@ safe_f! {
     }
 }
 
+/*
 cfg_if! {
     if #[cfg(not(any(freebsd10, freebsd11)))] {
         extern "C" {
@@ -5645,6 +5646,7 @@ extern "C" {
         num_matches: *mut ::c_int,
     ) -> ::c_int;
 }
+*/
 
 cfg_if! {
     if #[cfg(freebsd14)] {

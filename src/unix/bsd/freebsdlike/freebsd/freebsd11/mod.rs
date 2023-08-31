@@ -452,6 +452,7 @@ f! {
     }
 }
 
+/*
 extern "C" {
     // Return type ::c_int was removed in FreeBSD 12
     pub fn setgrent() -> ::c_int;
@@ -477,6 +478,7 @@ extern "C" {
     pub fn dirname(path: *const ::c_char) -> *mut ::c_char;
     pub fn basename(path: *const ::c_char) -> *mut ::c_char;
 }
+*/
 
 cfg_if! {
     if #[cfg(any(target_arch = "x86_64",

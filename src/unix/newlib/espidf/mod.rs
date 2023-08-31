@@ -89,6 +89,7 @@ pub const MSG_EOR: ::c_int = 0x08;
 
 pub const PTHREAD_STACK_MIN: ::size_t = 768;
 
+/*
 extern "C" {
     pub fn pthread_create(
         native: *mut ::pthread_t,
@@ -106,5 +107,6 @@ extern "C" {
 
     pub fn eventfd(initval: ::c_uint, flags: ::c_int) -> ::c_int;
 }
+*/
 
 pub use crate::unix::newlib::generic::{sigset_t, stat};

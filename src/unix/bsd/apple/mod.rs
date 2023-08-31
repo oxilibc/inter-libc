@@ -5219,6 +5219,7 @@ safe_f! {
     }
 }
 
+/*
 extern "C" {
     pub fn setgrent();
     #[doc(hidden)]
@@ -6114,6 +6115,8 @@ extern "C" {
     ) -> ::size_t;
     pub fn iconv_close(cd: iconv_t) -> ::c_int;
 }
+
+*/
 
 cfg_if! {
     if #[cfg(target_pointer_width = "32")] {

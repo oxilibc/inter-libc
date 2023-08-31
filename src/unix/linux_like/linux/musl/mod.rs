@@ -710,6 +710,7 @@ cfg_if! {
     }
 }
 
+/*
 extern "C" {
     pub fn sendmmsg(
         sockfd: ::c_int,
@@ -784,6 +785,7 @@ extern "C" {
 // Alias <foo> to <foo>64 to mimic glibc's LFS64 support
 mod lfs64;
 pub use self::lfs64::*;
+*/
 
 cfg_if! {
     if #[cfg(any(target_arch = "x86_64",

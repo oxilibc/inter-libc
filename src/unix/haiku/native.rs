@@ -839,6 +839,7 @@ pub const B_NETWORK_ADDRESS_TYPE: u32 = haiku_constant!('N', 'W', 'A', 'D');
 pub const B_MIME_STRING_TYPE: u32 = haiku_constant!('M', 'I', 'M', 'S');
 pub const B_ASCII_TYPE: u32 = haiku_constant!('T', 'E', 'X', 'T');
 
+/*
 extern "C" {
     // kernel/OS.h
     pub fn create_area(
@@ -1364,3 +1365,4 @@ pub unsafe fn get_next_image_info(
         core::mem::size_of::<image_info>() as ::size_t,
     )
 }
+*/

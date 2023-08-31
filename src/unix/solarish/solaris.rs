@@ -65,6 +65,7 @@ pub const F_DUPFD_CLOFORK: ::c_int = 49;
 pub const F_DUP2FD_CLOEXEC: ::c_int = 48;
 pub const F_DUP2FD_CLOFORK: ::c_int = 50;
 
+/*
 extern "C" {
     pub fn fexecve(
         fd: ::c_int,
@@ -99,3 +100,4 @@ extern "C" {
 
     pub fn euidaccess(path: *const ::c_char, amode: ::c_int) -> ::c_int;
 }
+*/

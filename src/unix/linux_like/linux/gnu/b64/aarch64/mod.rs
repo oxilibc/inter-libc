@@ -905,6 +905,7 @@ pub const SYS_set_mempolicy_home_node: ::c_long = 450;
 pub const PROT_BTI: ::c_int = 0x10;
 pub const PROT_MTE: ::c_int = 0x20;
 
+/*
 extern "C" {
     pub fn sysctl(
         name: *mut ::c_int,
@@ -915,6 +916,7 @@ extern "C" {
         newlen: ::size_t,
     ) -> ::c_int;
 }
+*/
 
 cfg_if! {
     if #[cfg(target_pointer_width = "32")] {

@@ -639,6 +639,6 @@ pub const PTHREAD_RWLOCK_INITIALIZER: pthread_rwlock_t = pthread_rwlock_t {
 };
 pub const RLIM_INFINITY: ::c_ulong = 0x7fffffffffffffff;
 
-extern "C" {
-    pub fn getsystemcfg(label: ::c_int) -> ::c_ulong;
-}
+// extern "C" {
+//     pub fn getsystemcfg(label: ::c_int) -> ::c_ulong;
+// }

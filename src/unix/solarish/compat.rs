@@ -32,6 +32,7 @@ pub unsafe fn cfmakeraw(termios: *mut ::termios) {
     (*termios).c_cc[VTIME] = 0;
 }
 
+/*
 pub unsafe fn cfsetspeed(termios: *mut ::termios, speed: ::speed_t) -> ::c_int {
     // Neither of these functions on illumos or Solaris actually ever
     // return an error
@@ -218,3 +219,4 @@ pub unsafe fn getgrent_r(
 
     ret
 }
+*/

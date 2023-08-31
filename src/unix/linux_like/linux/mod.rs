@@ -4096,6 +4096,7 @@ safe_f! {
     }
 }
 
+/*
 cfg_if! {
     if #[cfg(all(not(target_env = "uclibc"), not(target_env = "ohos")))] {
         extern "C" {
@@ -4890,6 +4891,7 @@ cfg_if! {
         }
     }
 }
+*/
 
 cfg_if! {
     if #[cfg(target_env = "uclibc")] {

@@ -533,6 +533,7 @@ pub const REG_R15: ::c_int = 15;
 
 pub const NGREG: ::c_int = 18;
 
+/*
 f! {
     // Sadly, Android before 5.0 (API level 21), the accept4 syscall is not
     // exposed by the libc. As work-around, we implement it through `syscall`
@@ -548,3 +549,4 @@ f! {
         ::syscall(SYS_accept4, fd, addr, len, flg) as ::c_int
     }
 }
+*/

@@ -1776,6 +1776,7 @@ safe_f! {
     }
 }
 
+/*
 extern "C" {
     pub fn gettimeofday(tp: *mut ::timeval, tz: *mut ::timezone) -> ::c_int;
     pub fn settimeofday(tp: *const ::timeval, tz: *const ::timezone) -> ::c_int;
@@ -1955,6 +1956,7 @@ cfg_if! {
         }
     }
 }
+*/
 
 cfg_if! {
     if #[cfg(target_arch = "aarch64")] {

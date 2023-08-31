@@ -103,6 +103,7 @@ pub const BIOCSRTIMEOUT: ::c_ulong = 0x8010426d;
 pub const BIOCGRTIMEOUT: ::c_ulong = 0x4010426e;
 pub const BIOCSETFNR: ::c_ulong = 0x8010427e;
 
+/*
 extern "C" {
     pub fn exchangedata(
         path1: *const ::c_char,
@@ -110,6 +111,7 @@ extern "C" {
         options: ::c_uint,
     ) -> ::c_int;
 }
+*/
 
 cfg_if! {
     if #[cfg(target_arch = "x86_64")] {

@@ -210,6 +210,7 @@ safe_f! {
     }
 }
 
+/*
 extern "C" {
     pub fn pthread_create(
         native: *mut ::pthread_t,
@@ -266,3 +267,4 @@ extern "C" {
 
     pub fn gethostid() -> ::c_long;
 }
+*/

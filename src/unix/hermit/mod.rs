@@ -957,6 +957,7 @@ safe_f! {
     }
 }
 
+/*
 extern "C" {
     pub fn getrlimit(resource: ::c_int, rlim: *mut ::rlimit) -> ::c_int;
     pub fn setrlimit(resource: ::c_int, rlim: *const ::rlimit) -> ::c_int;
@@ -1009,6 +1010,7 @@ extern "C" {
     pub fn setgroups(ngroups: ::c_int, grouplist: *const ::gid_t) -> ::c_int;
     pub fn uname(buf: *mut ::utsname) -> ::c_int;
 }
+*/
 
 cfg_if! {
     if #[cfg(target_arch = "aarch64")] {

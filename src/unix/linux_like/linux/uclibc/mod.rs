@@ -294,6 +294,7 @@ pub const UDP_GRO: ::c_int = 104;
 pub const UDP_SEGMENT: ::c_int = 103;
 pub const YESEXPR: ::c_int = ((5) << 8) | (0);
 
+/*
 extern "C" {
     pub fn ioctl(fd: ::c_int, request: ::c_ulong, ...) -> ::c_int;
     pub fn gettimeofday(tp: *mut ::timeval, tz: *mut ::timezone) -> ::c_int;
@@ -375,6 +376,7 @@ extern "C" {
     pub fn getpriority(which: ::__priority_which_t, who: ::id_t) -> ::c_int;
     pub fn setpriority(which: ::__priority_which_t, who: ::id_t, prio: ::c_int) -> ::c_int;
 }
+*/
 
 cfg_if! {
     if #[cfg(any(target_arch = "mips", target_arch = "mips64"))] {

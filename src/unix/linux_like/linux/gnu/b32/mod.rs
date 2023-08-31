@@ -319,6 +319,7 @@ pub const PTRACE_SETFPREGS: ::c_uint = 15;
 pub const PTRACE_GETREGS: ::c_uint = 12;
 pub const PTRACE_SETREGS: ::c_uint = 13;
 
+/*
 extern "C" {
     pub fn sysctl(
         name: *mut ::c_int,
@@ -329,6 +330,7 @@ extern "C" {
         newlen: ::size_t,
     ) -> ::c_int;
 }
+*/
 
 cfg_if! {
     if #[cfg(target_arch = "x86")] {

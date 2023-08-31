@@ -141,6 +141,7 @@ pub const _SC_PAGESIZE: ::c_int = 8;
 pub const _SC_GETPW_R_SIZE_MAX: ::c_int = 51;
 pub const PTHREAD_STACK_MIN: ::size_t = 32 * 1024;
 
+/*
 extern "C" {
     pub fn futimens(fd: ::c_int, times: *const ::timespec) -> ::c_int;
     pub fn writev(fd: ::c_int, iov: *const ::iovec, iovcnt: ::c_int) -> ::ssize_t;
@@ -199,3 +200,4 @@ extern "C" {
 
     pub fn getentropy(buf: *mut ::c_void, buflen: ::size_t) -> ::c_int;
 }
+*/

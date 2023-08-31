@@ -491,6 +491,7 @@ f! {
     }
 }
 
+/*
 extern "C" {
     pub fn setgrent();
     pub fn mprotect(addr: *mut ::c_void, len: ::size_t, prot: ::c_int) -> ::c_int;
@@ -528,6 +529,7 @@ extern "C" {
 extern "C" {
     pub fn kvm_kerndisp(kd: *mut ::kvm_t) -> ::kssize_t;
 }
+*/
 
 cfg_if! {
     if #[cfg(any(target_arch = "x86_64",

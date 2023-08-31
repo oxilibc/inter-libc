@@ -1094,12 +1094,14 @@ pub const SECCOMP_SET_MODE_FILTER: ::c_uint = 1;
 pub const SECCOMP_GET_ACTION_AVAIL: ::c_uint = 2;
 pub const SECCOMP_GET_NOTIF_SIZES: ::c_uint = 3;
 
+/*
 extern "C" {
     pub fn getcontext(ucp: *mut ucontext_t) -> ::c_int;
     pub fn setcontext(ucp: *const ucontext_t) -> ::c_int;
     pub fn makecontext(ucp: *mut ucontext_t, func: extern "C" fn(), argc: ::c_int, ...);
     pub fn swapcontext(uocp: *mut ucontext_t, ucp: *const ucontext_t) -> ::c_int;
 }
+*/
 
 cfg_if! {
     if #[cfg(libc_align)] {

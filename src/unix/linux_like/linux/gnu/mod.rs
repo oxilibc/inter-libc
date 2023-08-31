@@ -1120,6 +1120,7 @@ pub const REG_EEND: ::c_int = 14;
 pub const REG_ESIZE: ::c_int = 15;
 pub const REG_ERPAREN: ::c_int = 16;
 
+/*
 extern "C" {
     pub fn fgetspent_r(
         fp: *mut ::FILE,
@@ -1390,6 +1391,7 @@ extern "C" {
         buflen: ::c_int,
     ) -> *mut ::mntent;
 }
+*/
 
 cfg_if! {
     if #[cfg(any(target_arch = "x86",

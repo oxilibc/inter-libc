@@ -1587,6 +1587,7 @@ safe_f! {
     }
 }
 
+/*
 extern "C" {
     pub fn getrlimit(resource: ::c_int, rlim: *mut ::rlimit) -> ::c_int;
     pub fn setrlimit(resource: ::c_int, rlim: *const ::rlimit) -> ::c_int;
@@ -2064,6 +2065,7 @@ extern "C" {
         searchLength: ::size_t,
     ) -> *mut ::c_void;
 }
+*/
 
 cfg_if! {
     if #[cfg(target_pointer_width = "64")] {

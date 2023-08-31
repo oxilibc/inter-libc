@@ -2513,6 +2513,7 @@ safe_f! {
     }
 }
 
+/*
 extern "C" {
     pub fn ntp_adjtime(buf: *mut timex) -> ::c_int;
     pub fn ntp_gettime(buf: *mut ntptimeval) -> ::c_int;
@@ -3152,6 +3153,7 @@ extern "C" {
 
     pub fn kinfo_getvmmap(pid: ::pid_t, cntp: *mut ::size_t) -> *mut kinfo_vmentry;
 }
+*/
 
 cfg_if! {
     if #[cfg(target_arch = "aarch64")] {

@@ -599,6 +599,7 @@ safe_f! {
     }
 }
 
+/*
 extern "C" {
     #[cfg_attr(
         all(target_os = "macos", target_arch = "x86"),
@@ -900,6 +901,7 @@ extern "C" {
         longindex: *mut ::c_int,
     ) -> ::c_int;
 }
+*/
 
 cfg_if! {
     if #[cfg(any(target_os = "macos", target_os = "ios", target_os = "tvos", target_os = "watchos"))] {

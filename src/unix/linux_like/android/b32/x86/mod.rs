@@ -588,6 +588,7 @@ pub const REG_SS: ::c_int = 18;
 // socketcall values from linux/net.h (only the needed ones, and not public)
 const SYS_ACCEPT4: ::c_int = 18;
 
+/*
 f! {
     // Sadly, Android before 5.0 (API level 21), the accept4 syscall is not
     // exposed by the libc. As work-around, we implement it as raw syscall.
@@ -613,6 +614,7 @@ f! {
         ::syscall(SYS_socketcall, SYS_ACCEPT4, args[..].as_mut_ptr())
     }
 }
+*/
 
 cfg_if! {
     if #[cfg(libc_align)] {

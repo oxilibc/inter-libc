@@ -1004,6 +1004,7 @@ safe_f! {
     }
 }
 
+/*
 extern "C" {
     // errno.h
     pub fn __errno_location() -> *mut ::c_int;
@@ -1170,6 +1171,7 @@ extern "C" {
         valuep: *mut *mut c_char,
     ) -> ::c_int;
 }
+*/
 
 cfg_if! {
     if #[cfg(feature = "extra_traits")] {

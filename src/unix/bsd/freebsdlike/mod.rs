@@ -1473,6 +1473,7 @@ safe_f! {
     }
 }
 
+/*
 extern "C" {
     pub fn sem_destroy(sem: *mut sem_t) -> ::c_int;
     pub fn sem_init(sem: *mut sem_t, pshared: ::c_int, value: ::c_uint) -> ::c_int;
@@ -1882,6 +1883,7 @@ extern "C" {
         nbytes: ::size_t,
     ) -> ::ssize_t;
 }
+*/
 
 cfg_if! {
     if #[cfg(target_os = "freebsd")] {

@@ -1668,6 +1668,7 @@ safe_f! {
     }
 }
 
+/*
 extern "C" {
     #[doc(hidden)]
     pub fn __libc_current_sigrtmax() -> ::c_int;
@@ -1883,6 +1884,7 @@ cfg_if! {
         }
     }
 }
+*/
 
 cfg_if! {
     if #[cfg(target_os = "emscripten")] {

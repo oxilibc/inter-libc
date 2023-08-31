@@ -472,6 +472,7 @@ f! {
     }
 }
 
+/*
 extern "C" {
     pub fn setgrent();
     pub fn mprotect(addr: *mut ::c_void, len: ::size_t, prot: ::c_int) -> ::c_int;
@@ -487,6 +488,7 @@ extern "C" {
     pub fn dirname(path: *mut ::c_char) -> *mut ::c_char;
     pub fn basename(path: *mut ::c_char) -> *mut ::c_char;
 }
+*/
 
 cfg_if! {
     if #[cfg(any(target_arch = "x86_64",

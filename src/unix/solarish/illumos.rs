@@ -68,6 +68,7 @@ pub const B4000000: ::speed_t = 31;
 // sys/systeminfo.h
 pub const SI_ADDRESS_WIDTH: ::c_int = 520;
 
+/*
 extern "C" {
     pub fn eventfd(init: ::c_uint, flags: ::c_int) -> ::c_int;
 
@@ -86,3 +87,4 @@ extern "C" {
         -> ::ssize_t;
     pub fn getpagesizes2(pagesize: *mut ::size_t, nelem: ::c_int) -> ::c_int;
 }
+*/

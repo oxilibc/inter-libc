@@ -646,6 +646,7 @@ pub const TIOCM_RI: ::c_int = TIOCM_RNG;
 
 pub const TIMER_ABSTIME: ::c_int = 1;
 
+/*
 #[link(name = "util")]
 extern "C" {
     pub fn setgrent();
@@ -748,6 +749,8 @@ extern "C" {
     pub fn basename(path: *mut ::c_char) -> *mut ::c_char;
     pub fn getentropy(buf: *mut ::c_void, buflen: ::size_t) -> ::c_int;
 }
+
+*/
 
 cfg_if! {
     if #[cfg(target_os = "netbsd")] {
