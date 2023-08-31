@@ -3,7 +3,7 @@
 //! [Documentation for other platforms][pd].
 //!
 //! [pd]: https://rust-lang.github.io/libc/#platform-specific-documentation
-#![crate_name = "libc"]
+#![crate_name = "iter_libc"]
 #![crate_type = "rlib"]
 #![allow(
     renamed_and_removed_lints, // Keep this order.
