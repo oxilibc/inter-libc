@@ -1591,14 +1591,6 @@ f! {
 }
 
 safe_f! {
-    pub fn SIGRTMAX() -> ::c_int {
-        unsafe { __libc_current_sigrtmax() }
-    }
-
-    pub fn SIGRTMIN() -> ::c_int {
-        unsafe { __libc_current_sigrtmin() }
-    }
-
     pub {const} fn WIFSTOPPED(status: ::c_int) -> bool {
         (status & 0xff) == 0x7f
     }
